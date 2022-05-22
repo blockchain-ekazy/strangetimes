@@ -12,8 +12,8 @@ import "./Home.css";
 
 export default function Home() {
   const REACT_APP_CONTRACT_ADDRESS =
-    "0xDeFC781DFcc027243b59937b37Be121fc0663c01";
-  const SELECTEDNETWORK = "4";
+    "0xB2A2c7fB3E326c5ef282cB78207fbD9dcBA8e983";
+  const SELECTEDNETWORK = "1";
   const SELECTEDNETWORKNAME = "Ethereum";
 
   const [quantity, setQuantity] = useState(1);
