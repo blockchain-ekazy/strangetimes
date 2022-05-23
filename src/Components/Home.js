@@ -8,6 +8,7 @@ import { MerkleTree } from "merkletreejs";
 import keccak256 from "keccak256";
 import { white } from "./whitelist.js";
 
+import os from "../Imgs/os.svg";
 import "./Home.css";
 
 export default function Home() {
@@ -123,6 +124,7 @@ export default function Home() {
   };
 
   const connectWallet = async () => {
+    console.log(merkleTree.getRoot().toString("hex"));
     if (!initializeWeb3()) return false;
     await window.ethereum.enable();
     let m = await web3.eth.getAccounts();
@@ -275,9 +277,19 @@ export default function Home() {
         <div className="row ">
           <div className="col-md-4"></div>
           <div className="col-md-4 text-center">
-            <i className="btc px-2 fa-brands fa-twitter"></i>
-            <i className="btc px-2 fa-brands fa-instagram"></i>
-            <i className="btc px-2 fa-brands fa-discord"></i>
+            <a href="https://twitter.com/NFTStrangeTimes" target="_blank">
+              <i className="btc px-2 fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://t.co/XtxgBThUjG" target="_blank">
+              <i className="btc px-2 fa-brands fa-discord"></i>
+            </a>
+            <a
+              href="https://opensea.io/collection/strange-times-ahal-magi"
+              target="_blank"
+              style={{ fontSize: "45px" }}
+            >
+              <img src={os} style={{ height: "35px" }} className="px-2" />
+            </a>
           </div>
           <div className="col-md-4"></div>
         </div>
