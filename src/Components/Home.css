@@ -22,12 +22,13 @@ body {
 }
 .AAA {
   background-image: url("../Imgs/Vector.png");
-  /* height: 130vh; */
   background-position: center;
   background-color: white;
   background-size: cover;
   background-repeat: no-repeat;
-  /* padding-bottom: 30px; */
+  background-color: #0003;
+  background-blend-mode: darken;
+  min-height: 100vh;
 }
 .sev {
   font-size: 100px;
@@ -360,7 +361,7 @@ svg.bubbles {
   color: #67e191;
 }
 .uty {
-  padding-top: 350px;
+  /* padding-top: 250px; */
 }
 #gooey-button:hover {
   cursor: pointer;
