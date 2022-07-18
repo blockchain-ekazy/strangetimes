@@ -1,381 +1,73 @@
-@font-face {
-  font-family: "Akrobat-Regular";
-  src: url("../Fonts/Akrobat-Regular.otf");
+* {
+  font-family: Arial;
 }
-@font-face {
-  font-family: "Chelsea Market";
-  src: url("../Fonts/chelsea-market/ChelseaMarket-Regular.ttf");
-}
-.quantityselector {
-  z-index: 10;
-  position: relative;
-}
-h1,
-h2,
-h3 {
-  font-family: "Chelsea Market" !important;
-}
-
-p,
-body {
-  font-family: "Akrobat-Regular";
-}
-.AAA {
-  background-image: url("../Imgs/Vector.png");
-  background-position: center;
-  background-color: white;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #0003;
-  background-blend-mode: darken;
-  min-height: 100vh;
-}
-.sev {
-  font-size: 100px;
-  font-weight: 500;
-  color: #67e191;
-}
-.sev1 {
-  padding-top: 100px;
-}
-.alie {
-  max-width: 100%;
-  width: 550px !important;
-  margin-top: -290px;
-  margin-left: 80px;
-}
-.tbd {
-  background: #67e191;
-  color: white;
-  font-size: 25px;
-  font-family: "chelsea market";
-  border: 3px solid;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 50px;
-  padding-right: 50px;
-  border-radius: 12px;
-  border-color: #67e191;
-}
-.tbd:hover {
-  color: #67e191;
-  background-color: white;
-  border-color: #67e191;
-}
-
-svg.bubbles {
-  position: absolute;
-  top: -4000px;
-  left: -4000px;
-}
-
-#gooey-button {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 45px;
-  padding-right: 45px;
-  font-size: 25px;
-  font-family: "chelsea market";
-  border: none;
-  color: white;
-  filter: url("#gooey");
-  position: relative;
-  background-color: #67e191;
-}
-#gooey-button:focus {
-  outline: none;
-}
-#gooey-button .bubbles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-#gooey-button .bubbles .bubble {
-  background-color: #67e191;
-  border-radius: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+.logo {
+  width: 100px;
+  margin: auto auto 10px auto;
   display: block;
-  z-index: -1;
 }
-#gooey-button .bubbles .bubble:nth-child(1) {
-  left: 21px;
-  width: 25px;
-  height: 25px;
-  animation: move-1 3.02s infinite;
-  animation-delay: 0.2s;
+.info {
+  max-width: 730px;
+  margin: auto;
+  margin-top: 19px;
+  display: block;
+  font-size: 12px;
+  line-height: 27px;
+  font-weight: 300;
+  text-align: justify;
+  font-weight: 400;
 }
-#gooey-button .bubbles .bubble:nth-child(2) {
-  left: 71px;
-  width: 25px;
-  height: 25px;
-  animation: move-2 3.04s infinite;
-  animation-delay: 0.4s;
+.title {
+  font-size: 15px;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 50px;
 }
-#gooey-button .bubbles .bubble:nth-child(3) {
-  left: 52px;
-  width: 25px;
-  height: 25px;
-  animation: move-3 3.06s infinite;
-  animation-delay: 0.6s;
+.search {
+  border-radius: 5px;
+  border: 1px solid !important;
+  width: 390px;
+  max-width: 95%;
+  padding: 18px;
+  text-align: center;
 }
-#gooey-button .bubbles .bubble:nth-child(4) {
-  left: 33px;
-  width: 25px;
-  height: 25px;
-  animation: move-4 3.08s infinite;
-  animation-delay: 0.8s;
+.items img {
+  width: 100%;
 }
-#gooey-button .bubbles .bubble:nth-child(5) {
-  left: 60px;
-  width: 25px;
-  height: 25px;
-  animation: move-5 3.1s infinite;
-  animation-delay: 1s;
+.pagenum span {
+  cursor: pointer;
 }
-#gooey-button .bubbles .bubble:nth-child(6) {
-  left: 99px;
-  width: 25px;
-  height: 25px;
-  animation: move-6 3.12s infinite;
-  animation-delay: 1.2s;
+.items > div > div {
+  position: relative;
+  cursor: pointer;
 }
-#gooey-button .bubbles .bubble:nth-child(7) {
-  left: 53px;
-  width: 25px;
-  height: 25px;
-  animation: move-7 3.14s infinite;
-  animation-delay: 1.4s;
+.apeid {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  opacity: 0.9;
 }
-#gooey-button .bubbles .bubble:nth-child(8) {
-  left: 77px;
-  width: 25px;
-  height: 25px;
-  animation: move-8 3.16s infinite;
-  animation-delay: 1.6s;
-}
-#gooey-button .bubbles .bubble:nth-child(9) {
-  left: 97px;
-  width: 25px;
-  height: 25px;
-  animation: move-9 3.18s infinite;
-  animation-delay: 1.8s;
-}
-#gooey-button .bubbles .bubble:nth-child(10) {
-  left: 70px;
-  width: 25px;
-  height: 25px;
-  animation: move-10 3.2s infinite;
-  animation-delay: 2s;
-}
-
-@keyframes move-1 {
-  0% {
-    transform: translate(0, 0);
-  }
-  99% {
-    transform: translate(0, -69px);
-  }
-  100% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-}
-
-@keyframes move-2 {
-  0% {
-    transform: translate(0, 0);
-  }
-  99% {
-    transform: translate(0, -109px);
-  }
-  100% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-}
-
-@keyframes move-3 {
-  0% {
-    transform: translate(0, 0);
-  }
-  99% {
-    transform: translate(0, -106px);
-  }
-  100% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-}
-
-@keyframes move-4 {
-  0% {
-    transform: translate(0, 0);
-  }
-  99% {
-    transform: translate(0, -77px);
-  }
-  100% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-}
-
-@keyframes move-5 {
-  0% {
-    transform: translate(0, 0);
-  }
-  99% {
-    transform: translate(0, -87px);
-  }
-  100% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-}
-
-@keyframes move-6 {
-  0% {
-    transform: translate(0, 0);
-  }
-  99% {
-    transform: translate(0, -73px);
-  }
-  100% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-}
-
-@keyframes move-7 {
-  0% {
-    transform: translate(0, 0);
-  }
-  99% {
-    transform: translate(0, -97px);
-  }
-  100% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-}
-
-@keyframes move-8 {
-  0% {
-    transform: translate(0, 0);
-  }
-  99% {
-    transform: translate(0, -101px);
-  }
-  100% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-}
-
-@keyframes move-9 {
-  0% {
-    transform: translate(0, 0);
-  }
-  99% {
-    transform: translate(0, -68px);
-  }
-  100% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-}
-
-@keyframes move-10 {
-  0% {
-    transform: translate(0, 0);
-  }
-  99% {
-    transform: translate(0, -104px);
-  }
-  100% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-}
-
-.alie1 {
-  width: 200px !important;
-  max-width: 100%;
-  margin-top: -270px;
-  margin-right: 150px !important;
-}
-.count {
-  color: white;
-  background-color: #67e191;
-  font-size: 22px;
-}
-
-.quantity {
-  color: white;
-  font-size: 32px;
+.boldfont {
   font-weight: 900;
 }
-
-.btn.focus,
-.btn:focus {
-  box-shadow: none;
+.selection {
+  max-width: 390px;
+  margin: auto;
+  display: block;
 }
-@media only screen and (max-width: 600px) {
-  .sev {
-    font-size: 70px;
-  }
+.opacitylow {
+  opacity: 0.5;
 }
-@media only screen and (max-width: 600px) {
-  .tbd {
-    font-size: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+.connectbutton {
+  font-size: 18px;
+  font-weight: 800;
+  width: 390px;
+  max-width: 95%;
 }
-@media only screen and (max-width: 600px) {
-  #gooey-button {
-    font-size: 35px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+a {
+  color: #000;
 }
-
-.opt {
-  background-color: black;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  border-bottom-right-radius: 100px;
-  border-top-left-radius: 100px;
-  max-width: 490px;
-}
-.btc {
-  font-size: 35px;
-  color: #67e191;
-}
-.uty {
-  /* padding-top: 250px; */
-}
-#gooey-button:hover {
-  cursor: pointer;
-  background-color: white;
-  color: #67e191;
-}
-#gooey-button:hover .bubble {
-  background-color: white;
-}
-.maxbtn {
-  line-height: 0.9em;
-  border: 1px solid white;
-  border-radius: 5px;
-  font-size: 13px;
-  cursor: pointer;
-  font-weight: 500;
+.AAA {
+  padding-top: 64px;
 }
